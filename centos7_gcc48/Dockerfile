@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/carfield-centos/centos7:7
+FROM centos7:7.3.1611
   
 MAINTAINER wangxin "wangxin0072000@gmail.com"  
   
@@ -11,6 +11,5 @@ RUN yum -y install cmake
 RUN yum -y install gcc-4.8.5-16.el7
 USER root
 RUN yum clean all
-RUN pip uninstall -y supervisor
 
   
