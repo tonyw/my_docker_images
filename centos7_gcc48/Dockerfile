@@ -12,4 +12,5 @@ RUN yum -y install gcc-4.8.5-16.el7
 RUN gcc --version
 RUN g++ --version
 RUN uname -a
+USER root
   
