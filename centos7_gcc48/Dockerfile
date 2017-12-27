@@ -13,4 +13,6 @@ RUN gcc --version
 RUN g++ --version
 RUN uname -a
 USER root
+RUN mkdir -p /var/log/supervisor
+COPY supervisord.conf /etc/supervisor.conf.d/supervisord.conf
   
