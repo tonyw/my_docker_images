@@ -8,4 +8,7 @@ RUN yum update -y
 RUN yum -y install curl
 RUN yum -y install gcc-c++-4.8.5-16.el7
 RUN yum -y install cmake
+gcc --version
+g++ --version
+uname -a
   
