@@ -11,5 +11,8 @@ RUN yum -y install cmake
 RUN yum -y install gcc-4.8.5-16.el7
 USER root
 RUN yum -y info supervisor
+RUN yum clean all
+RUN systemctl disable supervisord
+RUN systemctl stop supervisord
 
   
