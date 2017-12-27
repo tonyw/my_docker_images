@@ -10,7 +10,7 @@ RUN yum -y install gcc-c++-4.8.5-16.el7
 RUN yum -y install cmake
 RUN yum -y install gcc-4.8.5-16.el7
 USER root
-RUN yum -y remove supervisor
+RUN yum remove supervisor
 RUN yum clean all
 RUN pip list
 
