@@ -1,4 +1,4 @@
-FROM centos7:7.3.1611
+FROM centos:7
   
 MAINTAINER wangxin "wangxin0072000@gmail.com"  
   
