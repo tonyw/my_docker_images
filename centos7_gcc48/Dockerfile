@@ -10,7 +10,7 @@ RUN yum -y install gcc-c++-4.8.5-16.el7
 RUN yum -y install cmake
 RUN yum -y install gcc-4.8.5-16.el7
 USER root
-RUN yum -y remove supervisor.noarch 3.1.4-1.el7
-RUN yum -y remove nodejs-supervisor.noarch 0.6.0-2.el7
+RUN yum -y remove supervisor.noarch
+RUN yum -y remove nodejs-supervisor.noarch
 
   
