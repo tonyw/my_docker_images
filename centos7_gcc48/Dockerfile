@@ -11,5 +11,13 @@ RUN yum -y install gcc-4.8.5
 RUN yum -y install cmake
 USER root
 RUN yum clean all
+RUN yum -y install make
+RUN yum -y install vim
+RUN yum -y install boost-devel
+RUN yum -y install man
+RUN yum -y install libzip
+RUN yum -y install libzip-devel
+RUN yum -y install zlib-devel
+RUN yum -y install libcurl-devel
 
   
