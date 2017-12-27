@@ -15,4 +15,5 @@ RUN uname -a
 USER root
 RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor.conf.d/supervisord.conf
+RUN yum -y uninstall supervisord
   
