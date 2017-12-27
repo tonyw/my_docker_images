@@ -11,5 +11,6 @@ RUN yum -y install cmake
 RUN yum -y install gcc-4.8.5-16.el7
 RUN yum -y remove supervisor
 USER root
+RUN yum list|grep pervis
 
   
