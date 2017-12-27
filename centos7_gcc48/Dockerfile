@@ -12,7 +12,6 @@ RUN yum -y install gcc-4.8.5-16.el7
 USER root
 RUN yum -y remove supervisor
 RUN yum clean all
-RUN systemctl stop supervisord
 RUN pip list
 
   
