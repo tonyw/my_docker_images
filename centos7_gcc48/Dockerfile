@@ -21,6 +21,8 @@ RUN yum -y install libcurl-devel
 RUN yum -y install python-devel
 RUN yum -y install epel-release
 RUN yum -y install python-pip
+RUN yum -y install git automake patch logrotate libpng-devel libjpeg-devel
+RUN yum -y install wget tar bzip2 unzip dpkg vim-enhanced passwd
 RUN yum clean all
 
 RUN pip install --upgrade pip
