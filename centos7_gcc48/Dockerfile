@@ -20,5 +20,6 @@ RUN yum -y install zlib-devel
 RUN yum -y install libcurl-devel
 RUN yum -y install python-devel
 RUN yum -y install python-pip
-RUN pip install --upgrade pip
 RUN yum clean all
+
+RUN pip install --upgrade pip
