@@ -5,7 +5,7 @@ MAINTAINER wangxin "wangxin0072000@gmail.com"
 USER root
 
 RUN yum update -y
-RUN yum -y install epel-release
+
 RUN yum -y install curl
 RUN yum -y install gcc-c++-4.8.5
 RUN yum -y install gcc-4.8.5
@@ -19,6 +19,7 @@ RUN yum -y install libzip-devel
 RUN yum -y install zlib-devel
 RUN yum -y install libcurl-devel
 RUN yum -y install python-devel
+RUN yum -y install epel-release
 RUN yum -y install python-pip
 RUN yum clean all
 
