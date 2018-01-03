@@ -4,7 +4,5 @@ MAINTAINER wangxin "wangxin0072000@gmail.com"
 
 USER root
 
-RUN yum update -y
-
 RUN sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 RUN sudo apt-get install cmake libssl-dev libsodium-dev libpcre3-dev libleveldb-dev libboost-all-dev libgmp-dev libprotobuf-dev protobuf-compiler libjansson-dev screen build-essential pkg-config libc6-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python zlib1g-dev wget bsdmainutils automake
