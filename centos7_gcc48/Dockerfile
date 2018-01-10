@@ -1,11 +1,6 @@
 FROM centos:7
-  
 MAINTAINER wangxin "wangxin0072000@gmail.com"  
-
 USER root
-
-RUN yum update -y
-
 RUN yum -y install curl
 RUN yum -y install gcc-c++-4.8.5
 RUN yum -y install gcc-4.8.5
@@ -27,5 +22,4 @@ RUN yum -y install gdb
 RUN yum -y install thrift
 RUN yum -y --enablerepo='*debug*' install /usr/lib/debug/.build-id/b8/fbca68ca56e79556bf7884dacf89504096adeb.debug
 RUN yum clean all
-
 RUN pip install --upgrade pip
