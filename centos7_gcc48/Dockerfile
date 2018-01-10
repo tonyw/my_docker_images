@@ -20,5 +20,8 @@ RUN yum -y install git automake patch logrotate libpng-devel libjpeg-devel
 RUN yum -y install wget tar bzip2 unzip dpkg vim-enhanced passwd
 RUN yum -y install gdb
 RUN yum -y install thrift
+RUN yum -y install thrift-devel
+RUN yum -y install gperftools-devel
+RUN yum -y install gperftools-libs
 RUN yum clean all
 RUN pip install --upgrade pip
