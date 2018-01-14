@@ -23,5 +23,8 @@ RUN yum -y install thrift
 RUN yum -y install thrift-devel
 RUN yum -y install gperftools-devel
 RUN yum -y install gperftools-libs
+RUN yum -y install atlas-devel
+RUN yum -y install protobuf-devel leveldb-devel snappy-devel opencv-devel boost-devel hdf5-devel
+RUN yum -y install gflags-devel glog-devel lmdb-devel
 RUN yum clean all
 RUN pip install --upgrade pip
