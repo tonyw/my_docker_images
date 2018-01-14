@@ -7,6 +7,7 @@ RUN yum -y install gcc-4.8.5
 RUN yum -y install cmake
 RUN yum -y install make
 RUN yum -y install vim
+RUN wget http://repo.enetres.net/enetres.repo -O /etc/yum.repos.d/enetres.repo
 RUN yum -y install boost-devel
 RUN yum -y install man
 RUN yum -y install libzip
