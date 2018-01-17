@@ -8,7 +8,6 @@ RUN yum -y install cmake
 RUN yum -y install make
 RUN yum -y install vim
 RUN yum -y install wget tar bzip2 unzip dpkg vim-enhanced passwd
-RUN wget http://repo.enetres.net/enetres.repo -O /etc/yum.repos.d/enetres.repo
 RUN yum -y install boost-devel
 RUN yum -y install man
 RUN yum -y install libzip
@@ -27,5 +26,6 @@ RUN yum -y install gperftools-libs
 RUN yum -y install atlas-devel
 RUN yum -y install protobuf-devel leveldb-devel snappy-devel opencv-devel boost-devel hdf5-devel
 RUN yum -y install gflags-devel glog-devel lmdb-devel
+RUN yum -y install openblas-devel
 RUN yum clean all
 RUN pip install --upgrade pip
