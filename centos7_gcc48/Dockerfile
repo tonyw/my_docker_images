@@ -8,3 +8,4 @@ RUN pip install --upgrade pip
 RUN echo "Asia/shanghai" > /etc/timezone
 RUN yum -y install java-1.7.0-openjdk*
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN yum -y install net-tools
