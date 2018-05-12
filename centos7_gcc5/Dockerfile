@@ -11,3 +11,4 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN yum -y install net-tools
 RUN yum -y install centos-release-scl-rh
 RUN yum install devtoolset-4-gcc devtoolset-4-gcc-c++
+RUN yum install devtoolset-6-gcc devtoolset-6-gcc-c++
